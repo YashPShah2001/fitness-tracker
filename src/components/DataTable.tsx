@@ -17,7 +17,7 @@ export default function DataTable({data}:props){
                 </thead>
                 <tbody className="divide-y divide-slate-500 ">
                     {data.map((e) => (
-                        <tr key={e.date} className="hover:bg-gray-400 hover:text-slate-950 text-slate-500 transition-colors duration-300 ease-in-out">
+                        <tr key={e.date} className="hover:bg-gray-400 hover:text-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300 ease-in-out">
                             <td className="p-4 text-sm">{e.date}</td>
                             <td className="p-4 text-sm">{e.calories}</td>
                             <td className="p-4 text-sm">{e.steps}</td>
