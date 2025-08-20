@@ -8,7 +8,7 @@ interface props {
 export default function ({ data }: props) {
     return (
         //This rechart was initally developed using AI, then styled based upon my interests
-        <div className="w-full h-90 md:h-full bg-slate-100 dark:bg-slate-800 md:rounded-xl pt-2 pr-2 border border-slate-950 dark:border-slate-50">
+        <div data-testid="chart-container" className="w-full h-90 md:h-full bg-slate-100 dark:bg-slate-800 md:rounded-xl pt-2 pr-2 border border-slate-950 dark:border-slate-50">
             <ResponsiveContainer >
                 <LineChart data={data}>
                     <XAxis
