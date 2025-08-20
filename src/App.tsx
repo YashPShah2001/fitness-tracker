@@ -15,8 +15,10 @@ function App() {
 
   return (
     <>
-      <div className='bg-gray-300 dark:bg-gray-700 p-4 w-full shadow-md shadow-slate-500'>
-        <h1 className='text-2xl font-bold text-slate-800 dark:text-slate-300'>Weekly exercise summary</h1>
+      <div className="p-4 w-full 
+                      bg-gradient-to-r dark:bg-gradient-to-l from-slate-300 via-slate-500 to-slate-700
+                      shadow-md shadow-slate-500">
+        <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-300">Weekly exercise summary</h1>
       </div>
       <div className="flex flex-col md:flex-row gap-4 p-3">
         <div className="h-auto flex-1">
