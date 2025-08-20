@@ -7,7 +7,7 @@ The app shows a table view of exercise data (calories burned, steps taken) and a
 
 ## 🚀 Features
 
-- Load exercise data from a local JSON file (no APIs required).
+- Loading exercise data from a local JSON file (no APIs required).
 - Display the data in a **styled table**.
 - Visualize **calories and steps trends** in a line chart.
 - Clean, modern styling with **Tailwind CSS**.
@@ -18,16 +18,25 @@ The app shows a table view of exercise data (calories burned, steps taken) and a
 ## Setup Instructions
 
 1. Clone the repository:
-``` git clone https://github.com/YashPShah2001/fitness-tracker.git ```
-
-2. Install dependencies:
-``` npm install ```
-
-3. Run the app:
-``` npm run dev ```
-
-4. Open the brower at:
-``` http://localhost:5173 ```
+```
+git clone https://github.com/YashPShah2001/fitness-tracker.git
+```
+2. Move into project directory:
+```
+cd fitness-tracker
+```
+3. Install dependencies:
+```
+ npm install
+```
+4. Run the app:
+```
+ npm run dev
+```
+5. Open the brower at:
+```
+http://localhost:5173
+```
 
 ## Data
 The data is stored locally in exerciseData.json:
