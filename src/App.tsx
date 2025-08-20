@@ -1,9 +1,32 @@
 import './App.css'
+import type { ExerciseData } from './models/models';
+import rawData from "./data/exerciseData.json";
+import DataTable from './components/DataTable';
+import DataChart from './components/DataChart';
 
 function App() {
 
+  // As per requirement, we need to derive the steps field from durationMinutes field. I am assuming 100 steps per minute.
+  // Here, as the data is static and there are no states to cause re-render of the component, I am avoiding the use of memoizing hook.
+  const exerciseData: ExerciseData[] = rawData.map(record => ({
+    ...record,
+    steps: record.durationMinutes * 100,
+  }));
+
   return (
-    <div>Fitness Tracker</div>
+    <>
+      <div className='bg-gray-700 p-4 w-full'>
+        <h1 className='text-2xl text-slate-300'>Weekly exercise summary</h1>
+      </div>
+      <div className="grid md:grid-cols-2 gap-4 p-3">
+        <div className="h-auto">
+          <DataTable data={exerciseData} />
+        </div>
+        <div className="h-auto">
+          <DataChart data={exerciseData} />
+        </div>
+      </div>
+    </>
   )
 }
 
