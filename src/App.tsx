@@ -18,7 +18,7 @@ function App() {
       <div className='bg-gray-700 p-4 w-full'>
         <h1 className='text-2xl text-slate-300'>Weekly exercise summary</h1>
       </div>
-      <div className="grid md:grid-cols-2 md:flex gap-4 p-3">
+      <div className="flex flex-col md:flex-row gap-4 p-3">
         <div className="h-auto flex-1">
           <DataTable data={exerciseData} />
         </div>
