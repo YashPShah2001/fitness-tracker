@@ -22,7 +22,7 @@ function App() {
         <div className="h-auto flex-1">
           <DataTable data={exerciseData} />
         </div>
-        <div className="h-auto flex-1">
+        <div className="h-auto flex-2">
           <DataChart data={exerciseData} />
         </div>
       </div>
