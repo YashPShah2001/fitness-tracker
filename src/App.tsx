@@ -8,10 +8,14 @@ function App() {
 
   // As per requirement, we need to derive the steps field from durationMinutes field. I am assuming 100 steps per minute.
   // Here, as the data is static and there are no states to cause re-render of the component, I am avoiding the use of memoizing hook.
-  const exerciseData: ExerciseData[] = rawData.map(record => ({
-    ...record,
-    steps: record.durationMinutes * 100,
-  }));
+
+  //validating if json has missing values, then assigning default value.
+  const exerciseData: ExerciseData[] = rawData.map((record) => ({
+    date: record.date ?? "Unknown",
+    calories: record.calories ?? 0,
+    durationMinutes: record.durationMinutes ?? 0,
+    steps: record.durationMinutes ? record.durationMinutes*100 : 0,
+  }))
 
   return (
     <>
