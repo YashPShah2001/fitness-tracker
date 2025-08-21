@@ -63,8 +63,9 @@ AI tool(ChatGPT) was used for:
 - As a documentation assistance for tailwind and recharts.
 - Develop base code for table.
 - Configuring recharts.
+- Implementing theme based styles for recharts.
 - README documentation.
 
 ## Improvements / Future Scope
-- Theme based styling.
-- Add unit tests (Jest + React Testing Library).
+- Fetch data and implement rather than static data.
+- User interface alligning to organization/application styleguide.
